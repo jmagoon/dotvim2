@@ -1,0 +1,6 @@
+
+" plugins/10-init/files -------------------
+
+call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/vimproc.vim', {'build': 'make'})
+call dein#add('Shougo/unite.vim')
