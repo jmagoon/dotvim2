@@ -70,8 +70,8 @@ set modelines=5         " number of lines to check for vim: directives at the st
 "set fixdel                 " fix terminal code for delete (if delete is broken but backspace works)
 set autoindent          " automatically indent new line
 
-set ts=4                " number of spaces in a tab
-set sw=4                " number of spaces for indent
+set ts=2                " number of spaces in a tab
+set sw=2                " number of spaces for indent
 set et                  " expand tabs into spaces
 
 set ttimeoutlen=50      " fast Esc to normal mode
@@ -240,6 +240,12 @@ nnoremap <Leader>Yd :let @*=expand("%:h")<cr>:echo "Copied file directory to cli
 
 " keep at least  5 lines above/below cursor (when scrolling)
 set scrolloff=5
+
+" plugins/30-general/plugins/indent/lines -------------------
+
+" prevent indent-lines from messing with concealing settings set globally
+let g:indentLine_concealcursor = &concealcursor
+let g:indentLine_conceallevel = &conceallevel
 
 " plugins/70-languages/plugins/json/plugins/noconceal/files -------------------
 

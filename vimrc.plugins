@@ -31,16 +31,9 @@ let g:gundo_close_on_revert = 1
 
 nmap <leader>u :GundoToggle<CR>
 
-" plugins/30-general/plugins/indent/guides -------------------
+" plugins/30-general/plugins/indent/lines -------------------
 
-call dein#add('Indent-Guides')
-colorscheme default
-
-" indent-guides
-let g:indent_guides_start_level = 2
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
-let g:indent_guides_color_change_percent = 5
+call dein#add('Yggdroot/indentLine')
 
 " plugins/30-general/plugins/nerdtools/plugins/nerdtree/files -------------------
 
